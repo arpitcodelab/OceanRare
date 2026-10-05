@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply m-0 p-0 overflow-x-hidden antialiased bg-[#061421] text-white;
+  }
+}
+
+.scene-container {
+  @apply relative w-full overflow-hidden;
+}
+
+/* Base styles to support the premium 3D look */
+.glass-panel {
+  @apply bg-[#071523]/80 backdrop-blur-md border border-white/20 shadow-xl rounded-2xl;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideLeft {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+.animate-slideLeft {
+  animation: slideLeft 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
