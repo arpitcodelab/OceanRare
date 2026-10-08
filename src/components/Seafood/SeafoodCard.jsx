@@ -17,11 +17,11 @@ export default function SeafoodCard({ item, onClose }) {
 
   return (
     <div 
-      className="relative w-full p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-[32px] bg-[#061421] border-2 border-amber-400/35 shadow-[0_30px_70px_rgba(0,0,0,0.98)] overflow-hidden transition-all duration-300"
+      className="relative w-full p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-[32px] bg-[#061421]/90 backdrop-blur-2xl border border-amber-400/40 shadow-[0_30px_80px_rgba(0,0,0,0.85),inset_0_1px_1px_rgba(255,255,255,0.25)] overflow-hidden transition-all duration-300"
       onClick={(e) => e.stopPropagation()}
     >
       {/* Glossy top edge highlight */}
-      <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#F5A623]/60 to-transparent"></div>
+      <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#F5A623]/70 to-transparent"></div>
       
       {/* Diagonal gloss sweep */}
       <div className="absolute -inset-[100%] bg-gradient-to-tr from-transparent via-white/[0.04] to-transparent rotate-45 transform pointer-events-none"></div>
